@@ -8,7 +8,7 @@ import user4 from '../../Images/user-4.png'
 import './Testimonials.css'
 
 const Testimonials = () => {
-    const sliderRef = useRef<HTMLDivElement>(null);
+    const sliderRef = useRef<HTMLUListElement>(null);
     let tx  =0;
     const slideForward =()=>{
         if(sliderRef.current){

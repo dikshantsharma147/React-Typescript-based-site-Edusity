@@ -1,12 +1,13 @@
 import about_img from '../../Images/about.png'
 import play_icon from '../../Images/play-icon.png'
 import './About.css'
-const About = () => {
+const About = ({setPlayState}: {setPlayState:React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
     <div className='About'>
         <div className="about-left">
             <img src={about_img} alt="" className='about-img'/>
-            <img src={play_icon} alt="" className='play-icon'/>
+            <img src={play_icon} alt="" className='play-icon' onClick={()=>
+            {setPlayState(true)}}/>
         </div>
         <div className="about-right">
             <h3>ABOUT UNIVERSITY</h3>
